@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+a{
+    text-decoration: none;
+}
+.link-header{
+    margin: 0 10px;
+    color: black;
+    transition:all .25s;
+}
+.link-header:hover{
+    color: rgb(75, 252, 119);
+}
+
+.active{
+    color: rgb(75, 252, 119);
+}
+.link{
+    margin:0;
+}
+/* 
+======
+Header
+======
+*/
+.bg_Header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 5px 9px 22px -8px #777777;
+    margin-bottom: 80px;
+}
+.bg_Header nav{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    padding: 0 2rem;
+}
+.bg_Header nav div{
+    display: flex;
+}
+/* 
+======
+Searcher
+======
+*/
+.bg_Searcher{
+    width: 400px;
+    height: 100px;
+    margin: 0 auto 50px auto;
+    box-shadow: 5px 9px 22px -8px #777777;
+}
+.ct_Searcher{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+input{
+    background: rgb(187, 250, 255);
+    border: 2px solid rgb(50, 173, 255);
+    width: 100%;
+    outline: none;
+}
+/* 
+======
+cooktails
+======
+*/
+main{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    place-content: center;
+    place-items: center;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height:60%;
+    object-fit: cover;
+}
+.bg_cooktails{
+    width: 330px;
+    height: 430px;;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px -5px #777777;
+    transition: all .5s;
+}
+.bg_cooktails:hover{
+    box-shadow: 5px 9px 22px -8px #777777;
+}
+article{
+    padding: 20px 0 0 20px;
+}
+.common{
+    margin-bottom: 3px;
+}
+.btn_DETAILS{
+    
+    width: 100px;
+    height: 25px;
+    color: white;
+    background: #10B981;
+    transition: all .25s;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn_DETAILS:hover{
+    background: #047857;
+}
+.noFoundAleart{
+    font-size: 2rem;
+    opacity: 0.6;
+}
+
+/* 
+======
+Cooktails page
+======
+*/
+.title{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.title button{
+    width: 100px;
+    height: 25px;
+    color: white;
+    background: #10B981;
+    transition: all .25s;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.title button:hover{
+    background: #047857;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+}
+.cooktailsImage{
+    width: 430px;
+    height: 400px;
+    object-fit: cover;
+}
+.detail article div{
+    display: flex;
+    height: 50px;
+}
+.info_container{
+    width: 50%;
+    padding-left: 50px;
+}
+.info_container dt{
+    height: 30px;
+    background: #3dee7b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 550;
+
+}
+.info_container dd{
+    width: 100%;
+    padding-left: 10px;
+
+}
+.name{
+    width: 100px;
+}
+.category{
+    width: 120px;
+}
+.info{
+    width: 80px;
+}
+.glass{
+    width: 90px;
+}
+.ingredients{
+    width: 190px;
+}
+span{
+    opacity: 0.6;
+    margin-right: 10px;
+}
+/* 
+=====
+About Page
+=====
+*/
+.manyText{
+    width: 80%;
+    margin: 0 auto;
+}
+.manyText h1{
+    margin-bottom: 30px;
+}
+.manyText p{
+    line-height: 2.5;
+    opacity: 0.6;
+}
+/* 
+=====
+Newsletter Page
+=====
+*/
+.mailForm{
+    width: 50%;
+    height: 350px;
+    margin: 0 auto;
+    box-shadow: 5px 9px 22px -8px #777777;
+    padding-top: 30px;
+}
+.NewsletterTitle{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+.mailForm input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    background: #F8FAFC;
+}
+label{
+    width: 80%;
+}
+.mailForm form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+}
+.submitBtn{
+    border-style: solid;
+    width: 80%;
+    border: none ;
+    background:#3dee7b;
+    height: 30px;
+    transition: all .25s;
+}
+.submitBtn:hover{
+    background: #047857;
+}
+.submitBtn_child{
+    width: 100%;
+    height: 100%;
+}
+/* 
+======
+Pop Up Animation
+======
+*/
+.Popup_potision_base{
+    position: fixed;
+    top: 5%;
+    width: 30%;
+    left: 50%;
+    min-height: 50px;
+    transform: translateX(-59%);
+}
+.Popup_relative{
+    position: relative;
+    width: 290px;
+    min-height: 150px;
+    margin: 0 auto;
+}
+.Popup_container{
+    position: absolute;
+    width: 290px;
+    height: 60px;
+    top: -100%;
+    margin: 0 auto;
+    box-shadow: 5px -5px 15px -7px #777777;
+    background: white;
+    animation: fadein 0.5s linear forwards;
+}
+.Popup_fadeout{
+    position: absolute;
+    width: 290px;
+    height: 60px;
+    top: 100%;
+    margin: 0 auto;
+    box-shadow: 5px -5px 15px -7px #777777;
+    background: white;
+    animation: fadeout 0.5s linear forwards ;
+}
+.Popup_hidden{
+    display: none;
+}
+.aleart_element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.border_green{
+    position: absolute;
+    bottom: 0%;
+    height: 5px;
+    width: 100%;
+    background: #0fef5e;
+    animation: decGage 2s 0.5s linear forwards;
+}
+.border_red{
+    position: absolute;
+    bottom: 0%;
+    height: 5px;
+    width: 100%;
+    background: red;
+    animation: decGage 2s 0.5s linear forwards;
+}
+.check_reactIcons{
+    color: #0fef5e;
+}
+.expo_reactIcons{
+    color: red;
+}
+.close_reactIcons{
+    position: absolute;
+    right:3%;
+    top: 5%;
+    font-size: 1.5rem;
+}
+@keyframes fadein {
+    0%{
+        top: -100%;
+    }
+    50%{
+        top: 110%;
+    }
+    75%{
+        top: 90%;
+    }
+    100%{
+        top: 100%;
+    }
+}
+@keyframes fadeout {
+    0%{
+        top: 100%;
+    }
+    50%{
+        top: 110%;
+    }
+    100%{
+        top: -100%;
+    }
+}
+@keyframes decGage {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -100%;
+    }
+}

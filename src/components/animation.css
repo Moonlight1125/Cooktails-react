@@ -1,0 +1,39 @@
+
+ .circle_relative{
+   position: relative;
+   min-height: 100vh;
+ }
+ .circle_orbit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    background:rgb(86, 106, 103);
+    border-radius: 50%;
+ }
+ .spin_element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(0deg,rgb(63,249,220) 0% ,transparent 20%); 
+    animation: loading 2s linear infinite;
+ }
+ .cirlce_transparent{
+    width: 180px;
+    height: 180px;
+    background: white;
+    border-radius: 50%;
+ }
+ @keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
